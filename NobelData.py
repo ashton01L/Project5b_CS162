@@ -1,14 +1,20 @@
 # Author: Ashton Lee
 # Github User: ashton01L
-# Date: 10/29/2024
+# Date: 10/30/2024
 # Description: Write a class named NobelData that reads a JSON file containing data on Nobel Prizes and allows the user
 # to search that data.
 import json
 
 
 class NobelData:
+    """
+    A class to represent objects within NobelData
+    """
     def __init__(self):
-        # Initialize by reading the Nobel prize data from nobels.json
+        """
+        Initializes NobelData
+        """
+        # Initialize by reading the Nobel Prize data from nobels.json
         with open("nobels.json", "r") as file:
             self._data = json.load(file)
 
